@@ -49,3 +49,24 @@
   color: var(--accent);
   text-decoration: underline;
 }
+
+/* Several sections now run paragraph -> list -> paragraph. `.policy p` zeroes its
+   margins, so the rhythm between blocks has to be declared here rather than inherited. */
+.policy p + p,
+.policy p + ul,
+.policy ul + p {
+  margin-top: 12px;
+}
+
+.policy ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.policy li {
+  margin-bottom: 8px;
+}
+
+.policy li:last-child {
+  margin-bottom: 0;
+}
