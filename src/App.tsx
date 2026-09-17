@@ -1,6 +1,6 @@
 import './App.css'
 
-const LAST_UPDATED = 'September 15, 2026'
+const LAST_UPDATED = 'September 17, 2026'
 const APP_NAME = 'Charging Emoji: Battery Effect'
 const ANDROID_PACKAGE = 'com.dreek.emojicharge'
 const CONTACT_EMAIL = 'truongvq.se@gmail.com'
@@ -78,9 +78,10 @@ function App() {
         <h2>Advertising</h2>
         <p>
           This app shows ads served by <strong>Google AdMob</strong>. AdMob may also source ads
-          from mediation partners, currently including <strong>AppLovin</strong>. To select,
-          deliver, measure and fraud-check those ads, these advertising services collect the
-          following from your device and share it with advertising partners:
+          from mediation partners, currently including <strong>AppLovin</strong> and{' '}
+          <strong>Meta Audience Network</strong>. To select, deliver, measure and fraud-check
+          those ads, these advertising services collect the following from your device and share
+          it with advertising partners:
         </p>
         <ul>
           <li>
@@ -97,16 +98,26 @@ function App() {
           <li>
             <strong>Diagnostic information</strong> about the device and the ad request
           </li>
+          <li>
+            <strong>Whether the Facebook app is installed</strong> on your device. The Meta
+            Audience Network component checks for it so it can match an ad to you. It does not
+            read your Facebook account, your posts, or your friends, and it does not look at any
+            other app you have installed.
+          </li>
         </ul>
         <p>
           This data is shared with those advertising providers as independent third parties; we do
           not receive it ourselves. It is handled under{' '}
           <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">
             Google&apos;s Privacy Policy
-          </a>{' '}
-          and{' '}
+          </a>
+          ,{' '}
           <a href="https://www.applovin.com/privacy/" target="_blank" rel="noreferrer">
             AppLovin&apos;s Privacy Policy
+          </a>{' '}
+          and{' '}
+          <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noreferrer">
+            Meta&apos;s Privacy Policy
           </a>
           .
         </p>
@@ -168,8 +179,8 @@ function App() {
           <li>
             <strong>Questions or requests</strong> — email us at{' '}
             <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> and we will respond. For data
-            held by Google or AppLovin, please use the controls described in their own privacy
-            policies linked above.
+            held by Google, AppLovin or Meta, please use the controls described in their own
+            privacy policies linked above.
           </li>
         </ul>
       </section>
